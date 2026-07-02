@@ -60,8 +60,7 @@ const jsonLd = {
   description:
     'Senior product and engineering team that takes founders from a fragile MVP to a secure, scalable, production-grade product.',
   url: siteUrl,
-  email: 'cpsutharsan@gmail.com',
-  telephone: '+971562829428',
+  email: 'digitalfuturity@outlook.com',
   areaServed: ['Middle East', 'Asia', 'Worldwide'],
   knowsAbout: [
     'MVP development',

@@ -67,18 +67,10 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:cpsutharsan@gmail.com"
+                  href="mailto:digitalfuturity@outlook.com"
                   className="text-silver text-sm hover:text-cyan transition-colors duration-200"
                 >
-                  cpsutharsan@gmail.com
-                </a>
-              </li>
-              <li>
-                <a
-                  href="tel:+971562829428"
-                  className="text-silver text-sm hover:text-cyan transition-colors duration-200"
-                >
-                  +971 56 282 9428
+                  digitalfuturity@outlook.com
                 </a>
               </li>
             </ul>
