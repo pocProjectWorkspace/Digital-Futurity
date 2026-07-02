@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { Mail, Phone, Clock, Lock } from 'lucide-react';
+import { Mail, Clock, Lock } from 'lucide-react';
 import PageHero from '@/components/ui/PageHero';
 import AnimatedReveal from '@/components/ui/AnimatedReveal';
 import Button from '@/components/ui/Button';
@@ -62,18 +62,8 @@ export default function ContactContent() {
                   <Mail className="w-6 h-6 text-cyan shrink-0 mt-1" strokeWidth={1.5} />
                   <div>
                     <h4 className="text-white font-semibold mb-1">Email</h4>
-                    <a href="mailto:cpsutharsan@gmail.com" className="text-silver hover:text-cyan transition-colors">
-                      cpsutharsan@gmail.com
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <Phone className="w-6 h-6 text-cyan shrink-0 mt-1" strokeWidth={1.5} />
-                  <div>
-                    <h4 className="text-white font-semibold mb-1">Phone</h4>
-                    <a href="tel:+971562829428" className="text-silver hover:text-cyan transition-colors">
-                      +971 56 282 9428
+                    <a href="mailto:digitalfuturity@outlook.com" className="text-silver hover:text-cyan transition-colors">
+                      digitalfuturity@outlook.com
                     </a>
                   </div>
                 </div>

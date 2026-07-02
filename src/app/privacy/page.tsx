@@ -85,8 +85,8 @@ export default function PrivacyPage() {
             <h2 className="font-heading text-xl font-bold text-white mb-3">Contact</h2>
             <p>
               Questions about this policy, or requests about your data, can be sent to{' '}
-              <a href="mailto:cpsutharsan@gmail.com" className="text-cyan hover:underline">
-                cpsutharsan@gmail.com
+              <a href="mailto:digitalfuturity@outlook.com" className="text-cyan hover:underline">
+                digitalfuturity@outlook.com
               </a>
               .
             </p>
