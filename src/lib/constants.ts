@@ -54,51 +54,40 @@ export const trustStats = [
 
 export const whyUsCards = [
   {
-    title: 'End-to-End Ownership',
-    description: 'From product discovery through cloud delivery and optimisation — one senior team accountable for the full lifecycle.',
+    title: 'Actually Senior',
+    description: 'The people on your product are principal-level — 15+ years each — not juniors learning on your budget.',
   },
   {
-    title: 'Business-First Engineering',
-    description: 'We align technical decisions directly to commercial outcomes, ensuring every build decision serves a measurable business objective.',
+    title: "We've Been There",
+    description: "We've built and shipped our own products and mentored 50+ founders through Misk Launchpad. We know exactly where it breaks.",
   },
   {
-    title: 'Startup Speed, Enterprise Discipline',
-    description: 'Agile delivery velocity combined with the governance rigor that complex organisations require.',
+    title: 'Straight Talk',
+    description: "We'll tell you whether to harden or rebuild, and what to skip — not just quietly bill you hours.",
   },
   {
-    title: 'Cloud-Native by Default',
-    description: 'Cloud-first, automation-first architecture for platforms that scale reliably and cost-efficiently from day one.',
+    title: 'Built to Last',
+    description: 'Everything ships production-grade: secure, tested, and ready to scale from day one — no throwaway MVPs.',
   },
 ];
 
 export const deliveryStages = [
   {
-    title: 'Strategy',
-    items: ['Product discovery', 'Roadmaps', 'Stakeholder alignment'],
+    title: 'Launch',
+    items: ['Product shaping', 'Architecture', 'Full-stack build', 'Launch'],
   },
   {
-    title: 'Architecture',
-    items: ['Solution design', 'Cloud arch', 'Security-by-design', 'API patterns'],
+    title: 'Productionise',
+    items: ['Security & hardening', 'Tests & observability', 'CI/CD', 'Cloud setup'],
   },
   {
-    title: 'Build',
-    items: ['Full-stack eng', 'Platform dev', 'UX/UI impl', 'Test automation'],
+    title: 'Grow',
+    items: ['Growth features', 'Bookings & payments', 'Dashboards', 'AI & automation'],
   },
   {
-    title: 'Operate',
-    items: ['CI/CD pipelines', 'Observability', 'Reliability', 'Perf & cost opt'],
+    title: 'Scale & Secure',
+    items: ['Cloud & DevOps', 'Reliability', 'Security', 'Senior leadership'],
   },
-  {
-    title: 'Scale & Govern',
-    items: ['Program delivery', 'Governance', 'Platform modernisation', 'PMO'],
-  },
-];
-
-export const coreStrengths = [
-  'Product Innovation & 0-1',
-  'Enterprise Program Leadership',
-  'Architecture & Engineering',
-  'Cloud & DevOps Expertise',
 ];
 
 export const bestFitEngagements = [
