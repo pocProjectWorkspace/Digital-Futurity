@@ -14,10 +14,10 @@ export const siteMetadata = {
     description: 'End-to-end digital product and engineering capabilities — from product strategy and architecture to cloud delivery, DevOps, and AI governance.',
     og: { title: 'Capabilities | Digital Futurity', description: 'Full-lifecycle digital product and engineering services.' }
   },
-  industries: {
-    title: 'Industries | Digital Futurity',
-    description: 'Serving telecom, banking, education, and enterprise transformation clients across the Middle East and Asia.',
-    og: { title: 'Industries | Digital Futurity', description: 'Sector-relevant digital product and engineering expertise.' }
+  whatWeBuild: {
+    title: 'What We Build | Digital Futurity',
+    description: 'The systems founders actually need — growth, lead management, bookings & payments, dashboards, AI features, and the reliability and security to scale.',
+    og: { title: 'What We Build | Digital Futurity', description: 'Growth, leads, bookings, dashboards, AI, and reliability — built for founders.' }
   },
   engagement: {
     title: 'Engagement Models | Digital Futurity',
@@ -40,7 +40,7 @@ export const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
   { label: 'Capabilities', href: '/capabilities' },
-  { label: 'Industries', href: '/industries' },
+  { label: 'What We Build', href: '/what-we-build' },
   { label: 'Engagement', href: '/engagement' },
   { label: 'Proof Points', href: '/proof-points' },
   { label: 'Contact', href: '/contact' },
@@ -111,11 +111,44 @@ export const bestFitEngagements = [
   'AI Governance & Architecture',
 ];
 
-export const industryCards = [
-  { name: 'Telecom', icon: 'Radio' },
-  { name: 'Banking & Financial Services', icon: 'Landmark' },
-  { name: 'Education', icon: 'GraduationCap' },
-  { name: 'Enterprise Transformation', icon: 'Building2' },
+// What founders actually ask us to build — organised by outcome, not industry.
+export const whatWeBuild = [
+  {
+    icon: 'TrendingUp',
+    title: 'Growth & Acquisition',
+    description: 'Turn visitors into signups. Landing pages, SEO, analytics, and conversion funnels wired into your product — so growth is engineered, not hoped for.',
+    examples: ['Marketing site & landing pages', 'SEO & performance', 'Analytics & funnels', 'A/B testing'],
+  },
+  {
+    icon: 'Users',
+    title: 'Lead Management & CRM',
+    description: 'Stop losing leads in inboxes and spreadsheets. Capture, track, and follow up automatically — a custom pipeline or a clean integration with the CRM you already use.',
+    examples: ['Lead capture & routing', 'Pipelines & automation', 'CRM integrations', 'Custom admin'],
+  },
+  {
+    icon: 'CalendarCheck',
+    title: 'Bookings & Payments',
+    description: 'Let customers book and pay without you in the loop. Scheduling, calendars, checkout, subscriptions, and invoicing — done securely.',
+    examples: ['Scheduling & calendars', 'Stripe & payments', 'Subscriptions & billing', 'Invoicing'],
+  },
+  {
+    icon: 'LayoutDashboard',
+    title: 'Dashboards & Internal Tools',
+    description: "See what's happening and run the business. Admin panels, analytics dashboards, and internal tools that replace the manual work slowing you down.",
+    examples: ['Admin & ops panels', 'Analytics dashboards', 'Reporting', 'Internal automation'],
+  },
+  {
+    icon: 'Sparkles',
+    title: 'AI Features & Automation',
+    description: 'Put AI to work where it actually helps. Chatbots, assistants, document and RAG workflows, and automations — built responsibly and integrated into your product.',
+    examples: ['Chatbots & assistants', 'RAG & document AI', 'Workflow automation', 'AI integrations'],
+  },
+  {
+    icon: 'ShieldCheck',
+    title: 'Reliability, Security & Scale',
+    description: 'The unglamorous foundation that keeps you out of trouble. Real auth, data protection, uptime, and cloud that scales — on AWS, GCP, or Azure.',
+    examples: ['Auth & access control', 'Security & data protection', 'Performance & uptime', 'Cloud & scaling'],
+  },
 ];
 
 export const services = [
@@ -226,33 +259,6 @@ export const services = [
       'Integration design for AI-enabled workflows',
     ],
     idealFor: 'Enterprise leaders exploring AI at scale. Organisations needing a structured AI governance layer. CTOs designing AI into core platform strategy.',
-  },
-];
-
-export const industries = [
-  {
-    name: 'Telecom',
-    context: 'Telecom organisations face mounting pressure to modernise legacy infrastructure, launch new digital products, and compete with agile challengers — while maintaining the reliability their customers depend on. Transformation requires both technical depth and program delivery discipline.',
-    howWeHelp: 'We support telecom clients with architecture modernisation, new product builds on cloud-native platforms, DevOps capability uplift, and governance of complex multi-vendor programs.',
-    services: ['Platform Modernisation', 'Cloud Architecture', 'Program Delivery', 'Full-Stack Engineering', 'DevOps & Reliability'],
-  },
-  {
-    name: 'Banking & Financial Services',
-    context: 'Financial services organisations need to innovate faster without compromising on compliance, security, or resilience. Whether building new digital products or modernising core systems, the margin for error is low and the expectations from both regulators and customers are high.',
-    howWeHelp: 'We bring security-by-design architecture, regulated environment delivery experience, and product engineering rigour to financial services transformation — from digital product launches to platform overhaul.',
-    services: ['Solution Architecture', 'Security-by-Design', 'Product Builds', 'Governance Frameworks', 'AI Governance & Architecture'],
-  },
-  {
-    name: 'Education',
-    context: 'Education organisations are navigating rapid digitalisation — from student experience platforms to administrative system modernisation and data-driven operations. The challenge is building modern platforms that serve diverse user needs while managing budget constraints and legacy complexity.',
-    howWeHelp: 'We help education institutions design and build modern digital products — from student portals to data platforms — with a focus on usability, integration, and cost-efficient cloud delivery.',
-    services: ['Product Strategy', 'Full-Stack Engineering', 'UX/UI Delivery', 'Cloud & DevOps', 'Platform Modernisation'],
-  },
-  {
-    name: 'Enterprise Transformation',
-    context: 'Large enterprises undergoing digital transformation need more than a strategy — they need delivery. Complex programs spanning multiple business units, vendors, and platforms require senior program leadership, clear governance, and the engineering capability to execute.',
-    howWeHelp: 'We embed with enterprise transformation programs as a senior delivery partner — bringing architecture leadership, engineering capability, and program governance to complex, multi-stakeholder transformations.',
-    services: ['Enterprise Program Delivery', 'Architecture Advisory', 'Embedded Leadership', 'Platform Modernisation', 'AI Governance'],
   },
 ];
 

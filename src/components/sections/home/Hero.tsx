@@ -81,7 +81,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.35 }}
           className="lg:col-span-5"
         >
-          <BrowserMock url="app.upllyft.com" className="glow-cyan" />
+          <BrowserMock url="app.yourproduct.com" className="glow-cyan" />
         </motion.div>
       </div>
     </section>
