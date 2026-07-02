@@ -16,12 +16,25 @@ const spaceGrotesk = Space_Grotesk({
   display: 'swap',
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL
+  ? `https://${process.env.NEXT_PUBLIC_SITE_URL}`
+  : process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : 'http://localhost:3000';
+
 export const metadata: Metadata = {
-  title: 'Digital Futurity | Digital Product & Engineering Consultancy',
-  description: 'Senior digital product and engineering consultancy helping organisations design, build, modernise, and scale software platforms — Middle East & Asia.',
+  metadataBase: new URL(siteUrl),
+  title: 'Digital Futurity | From MVP to Production-Grade for Founders',
+  description: 'Senior product & engineering team that takes founders from a fragile MVP to a secure, scalable, production-grade product — big-firm seniority, startup speed and price.',
   openGraph: {
     title: 'Digital Futurity',
-    description: 'Build the future with a senior digital product and engineering team.',
+    description: "You've built something. We make it real — from MVP to production-grade.",
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Digital Futurity',
+    description: "You've built something. We make it real — from MVP to production-grade.",
   },
 };
 

@@ -9,15 +9,15 @@ export const siteMetadata = {
     description: '15-18+ years of experience in product innovation, enterprise architecture, and cloud delivery across the Middle East and Asia.',
     og: { title: 'About Digital Futurity', description: 'Technology leadership with delivery depth.' }
   },
-  capabilities: {
-    title: 'Capabilities | Digital Futurity',
-    description: 'End-to-end digital product and engineering capabilities — from product strategy and architecture to cloud delivery, DevOps, and AI governance.',
-    og: { title: 'Capabilities | Digital Futurity', description: 'Full-lifecycle digital product and engineering services.' }
+  services: {
+    title: 'Services | Digital Futurity',
+    description: 'Four stages, one senior team: launch your product, productionise a fragile MVP, build the features that drive growth, and scale securely — on AWS, GCP, or Azure.',
+    og: { title: 'Services | Digital Futurity', description: 'Launch, productionise, grow, and scale — a senior team for the whole founder journey.' }
   },
-  industries: {
-    title: 'Industries | Digital Futurity',
-    description: 'Serving telecom, banking, education, and enterprise transformation clients across the Middle East and Asia.',
-    og: { title: 'Industries | Digital Futurity', description: 'Sector-relevant digital product and engineering expertise.' }
+  whatWeBuild: {
+    title: 'What We Build | Digital Futurity',
+    description: 'The systems founders actually need — growth, lead management, bookings & payments, dashboards, AI features, and the reliability and security to scale.',
+    og: { title: 'What We Build | Digital Futurity', description: 'Growth, leads, bookings, dashboards, AI, and reliability — built for founders.' }
   },
   engagement: {
     title: 'Engagement Models | Digital Futurity',
@@ -39,322 +39,330 @@ export const siteMetadata = {
 export const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
-  { label: 'Capabilities', href: '/capabilities' },
-  { label: 'Industries', href: '/industries' },
+  { label: 'Services', href: '/services' },
+  { label: 'What We Build', href: '/what-we-build' },
   { label: 'Engagement', href: '/engagement' },
   { label: 'Proof Points', href: '/proof-points' },
   { label: 'Contact', href: '/contact' },
 ];
 
 export const trustStats = [
-  { value: 18, suffix: '+', label: 'Years Experience Each' },
-  { value: 50, suffix: '+', label: 'Startups Mentored' },
-  { value: 2, suffix: '', label: 'Regions: Middle East & Asia' },
+  { value: 15, suffix: '+', label: 'Years Experience Each' },
+  { value: 50, suffix: '+', label: 'Startups Mentored — Misk Launchpad' },
+  { value: 6, suffix: '+', label: 'Products Designed & Shipped' },
 ];
 
 export const whyUsCards = [
   {
-    title: 'End-to-End Ownership',
-    description: 'From product discovery through cloud delivery and optimisation — one senior team accountable for the full lifecycle.',
+    title: 'Actually Senior',
+    description: 'The people on your product are principal-level — 15+ years each — not juniors learning on your budget.',
   },
   {
-    title: 'Business-First Engineering',
-    description: 'We align technical decisions directly to commercial outcomes, ensuring every build decision serves a measurable business objective.',
+    title: "We've Been There",
+    description: "We've built and shipped our own products and mentored 50+ founders through Misk Launchpad. We know exactly where it breaks.",
   },
   {
-    title: 'Startup Speed, Enterprise Discipline',
-    description: 'Agile delivery velocity combined with the governance rigor that complex organisations require.',
+    title: 'Straight Talk',
+    description: "We'll tell you whether to harden or rebuild, and what to skip — not just quietly bill you hours.",
   },
   {
-    title: 'Cloud-Native by Default',
-    description: 'Cloud-first, automation-first architecture for platforms that scale reliably and cost-efficiently from day one.',
+    title: 'Built to Last',
+    description: 'Everything ships production-grade: secure, tested, and ready to scale from day one — no throwaway MVPs.',
   },
 ];
 
 export const deliveryStages = [
   {
-    title: 'Strategy',
-    items: ['Product discovery', 'Roadmaps', 'Stakeholder alignment'],
+    title: 'Launch',
+    items: ['Product shaping', 'Architecture', 'Full-stack build', 'Launch'],
   },
   {
-    title: 'Architecture',
-    items: ['Solution design', 'Cloud arch', 'Security-by-design', 'API patterns'],
+    title: 'Productionise',
+    items: ['Security & hardening', 'Tests & observability', 'CI/CD', 'Cloud setup'],
   },
   {
-    title: 'Build',
-    items: ['Full-stack eng', 'Platform dev', 'UX/UI impl', 'Test automation'],
+    title: 'Grow',
+    items: ['Growth features', 'Bookings & payments', 'Dashboards', 'AI & automation'],
   },
   {
-    title: 'Operate',
-    items: ['CI/CD pipelines', 'Observability', 'Reliability', 'Perf & cost opt'],
+    title: 'Scale & Secure',
+    items: ['Cloud & DevOps', 'Reliability', 'Security', 'Senior leadership'],
   },
-  {
-    title: 'Scale & Govern',
-    items: ['Program delivery', 'Governance', 'Platform modernisation', 'PMO'],
-  },
-];
-
-export const coreStrengths = [
-  'Product Innovation & 0-1',
-  'Enterprise Program Leadership',
-  'Architecture & Engineering',
-  'Cloud & DevOps Expertise',
 ];
 
 export const bestFitEngagements = [
-  'Product Builds from 0-1',
-  'Platform Modernisation',
-  'Cloud Transformation',
-  'Architecture Advisory',
-  'Process Redesign',
-  'Embedded Leadership Support',
-  'AI Governance & Architecture',
+  'MVP to Production',
+  '0→1 Product Builds',
+  'Fractional CTO',
+  'Growth & Feature Delivery',
+  'Bookings & Payments',
+  'AI Features',
+  'Cloud & Scaling',
 ];
 
-export const industryCards = [
-  { name: 'Telecom', icon: 'Radio' },
-  { name: 'Banking & Financial Services', icon: 'Landmark' },
-  { name: 'Education', icon: 'GraduationCap' },
-  { name: 'Enterprise Transformation', icon: 'Building2' },
+// What founders actually ask us to build — organised by outcome, not industry.
+export const whatWeBuild = [
+  {
+    icon: 'TrendingUp',
+    title: 'Growth & Acquisition',
+    description: 'Turn visitors into signups. Landing pages, SEO, analytics, and conversion funnels wired into your product — so growth is engineered, not hoped for.',
+    examples: ['Marketing site & landing pages', 'SEO & performance', 'Analytics & funnels', 'A/B testing'],
+  },
+  {
+    icon: 'Users',
+    title: 'Lead Management & CRM',
+    description: 'Stop losing leads in inboxes and spreadsheets. Capture, track, and follow up automatically — a custom pipeline or a clean integration with the CRM you already use.',
+    examples: ['Lead capture & routing', 'Pipelines & automation', 'CRM integrations', 'Custom admin'],
+  },
+  {
+    icon: 'CalendarCheck',
+    title: 'Bookings & Payments',
+    description: 'Let customers book and pay without you in the loop. Scheduling, calendars, checkout, subscriptions, and invoicing — done securely.',
+    examples: ['Scheduling & calendars', 'Stripe & payments', 'Subscriptions & billing', 'Invoicing'],
+  },
+  {
+    icon: 'LayoutDashboard',
+    title: 'Dashboards & Internal Tools',
+    description: "See what's happening and run the business. Admin panels, analytics dashboards, and internal tools that replace the manual work slowing you down.",
+    examples: ['Admin & ops panels', 'Analytics dashboards', 'Reporting', 'Internal automation'],
+  },
+  {
+    icon: 'Sparkles',
+    title: 'AI Features & Automation',
+    description: 'Put AI to work where it actually helps. Chatbots, assistants, document and RAG workflows, and automations — built responsibly and integrated into your product.',
+    examples: ['Chatbots & assistants', 'RAG & document AI', 'Workflow automation', 'AI integrations'],
+  },
+  {
+    icon: 'ShieldCheck',
+    title: 'Reliability, Security & Scale',
+    description: 'The unglamorous foundation that keeps you out of trouble. Real auth, data protection, uptime, and cloud that scales — on AWS, GCP, or Azure.',
+    examples: ['Auth & access control', 'Security & data protection', 'Performance & uptime', 'Cloud & scaling'],
+  },
 ];
 
+// The founder journey — four stages, one senior team.
 export const services = [
   {
-    id: 'product-strategy',
-    title: 'Product Strategy & 0-1 Innovation',
-    intro: 'From the first whiteboard to market launch, we help you define what to build, why it matters, and how to bring it to life with the right architecture and delivery approach.',
+    id: 'launch',
+    stage: '01',
+    title: 'Launch',
+    tagline: 'Get off the ground',
+    intro: "You've got an idea — or a rough prototype — and need it built properly the first time. We take you from concept to a launched product, making the architecture calls that won't come back to bite you in six months.",
     outcomes: [
-      'Validated product concept with clear commercial framing',
-      'Prioritised roadmap aligned to business objectives',
-      'Stakeholder-aligned product vision and scope',
-      '0-1 launch delivery with speed and engineering discipline',
+      'A launched product real users can actually use',
+      "Clean architecture that won't need redoing",
+      'Clear scope, timeline, and cost up front',
+      'A codebase your future team can build on',
     ],
-    deliverables: [
-      'Product discovery workshops',
-      'Opportunity and market framing',
-      'Product roadmap and release planning',
-      'MVP definition and launch strategy',
+    includes: [
+      'Product shaping & scope',
+      'Solution architecture',
+      'Full-stack build',
+      'Launch & handover',
     ],
-    idealFor: 'Founders launching a new product. Enterprise teams spinning out a new capability. Innovation leads validating a platform idea.',
+    idealFor: 'Non-technical founders with an idea. Founders with a no-code or AI prototype that needs to become real. Teams spinning up a new product.',
   },
   {
-    id: 'enterprise-architecture',
-    title: 'Enterprise Architecture & Solution Design',
-    intro: 'Great products are built on great architecture. We design systems that are secure, scalable, and integration-ready — giving your engineering teams a clear technical blueprint to build against.',
+    id: 'productionize',
+    stage: '02',
+    title: 'Productionise',
+    tagline: 'Make your MVP real',
+    intro: "Your thing works in a demo but isn't ready for real users, investors, or scale. We harden it — security, reliability, performance, and a codebase anyone can extend — and we'll tell you straight if it needs a targeted rebuild instead.",
     outcomes: [
-      'Future-proof architecture aligned to business scale',
-      'Security-by-design embedded from the ground up',
-      'Integration patterns that reduce complexity and coupling',
-      'Clear architectural decision records and documentation',
+      'A secure, reliable, production-grade product',
+      'Investor- and due-diligence-ready',
+      'Tech debt cleared where it actually matters',
+      "Confidence it won't fall over as you grow",
     ],
-    deliverables: [
-      'Solution architecture documents',
-      'Cloud architecture blueprints',
-      'API and integration design patterns',
-      'Security architecture review',
+    includes: [
+      'Codebase & architecture review',
+      'Security & data hardening',
+      'Test automation & observability',
+      'CI/CD & cloud setup',
     ],
-    idealFor: 'Organisations modernising legacy platforms. Teams preparing for scale. CTOs needing senior architecture leadership.',
+    idealFor: 'Founders with a fragile MVP. AI or no-code builds that hit their limits. Anyone with real users on shaky foundations.',
   },
   {
-    id: 'platform-engineering',
-    title: 'Full-Stack Platform Engineering',
-    intro: "We don't just design it — we build it. Our engineering team delivers full-stack platform development with production-grade quality, test automation, and UX implementation aligned to the product vision.",
+    id: 'grow',
+    stage: '03',
+    title: 'Grow',
+    tagline: 'Build what drives the business',
+    intro: "Once it's real, it needs to move the numbers. We build the growth machinery into your product — acquisition, lead capture, bookings, payments, dashboards, and AI features that actually help.",
     outcomes: [
-      'Production-ready platform delivered with engineering rigour',
-      'Test-automated, observable, and maintainable codebase',
-      'UX implementation aligned to design intent',
-      'Agile delivery with consistent sprint cadence',
+      'Features that drive signups and revenue',
+      'Manual work replaced with automation',
+      "Data to see what's working",
+      'A product that keeps shipping',
     ],
-    deliverables: [
-      'Full-stack application development',
-      'Platform and backend services',
-      'UX/UI implementation',
-      'Test automation suite',
+    includes: [
+      'Growth & acquisition features',
+      'Lead management, bookings, payments',
+      'Dashboards & internal tools',
+      'AI features & automation',
     ],
-    idealFor: 'Product teams needing a senior engineering partner. Organisations without an in-house build capability. Founders moving from MVP to production.',
+    idealFor: 'Founders with a live product needing traction. Teams drowning in manual ops. Products ready to add revenue features.',
   },
   {
-    id: 'cloud-devops',
-    title: 'Cloud, DevOps & Reliability',
-    intro: 'Modern platforms require modern operations. We design and implement cloud-native delivery pipelines, observability stacks, and reliability practices that keep your platform resilient, fast, and cost-efficient.',
+    id: 'scale',
+    stage: '04',
+    title: 'Scale & Secure',
+    tagline: 'Hold up under growth',
+    intro: "Growth breaks things. We make sure it doesn't break you — cloud that scales cost-efficiently, reliability practices, security done right, and the senior engineering leadership to steer it. On AWS, GCP, or Azure.",
     outcomes: [
-      'Automated CI/CD reducing release risk and cycle time',
-      'Observable systems with meaningful alerting and dashboards',
-      'Reliability practices reducing unplanned downtime',
-      'Infrastructure costs optimised without compromising performance',
+      'Infrastructure that scales without surprises',
+      'Uptime and performance under load',
+      'Security and data protection done right',
+      'Costs that still make sense as you grow',
     ],
-    deliverables: [
-      'CI/CD pipeline design and implementation',
-      'Observability and monitoring stack',
-      'Cloud infrastructure architecture',
-      'Cost optimisation review',
+    includes: [
+      'Cloud architecture & DevOps',
+      'Reliability & observability',
+      'Security & compliance readiness',
+      'Fractional senior engineering leadership',
     ],
-    idealFor: 'Engineering teams scaling their delivery. Organisations moving to cloud-native. Platforms needing reliability uplift.',
-  },
-  {
-    id: 'program-delivery',
-    title: 'Program Delivery, Governance & Modernisation',
-    intro: 'Complex digital programs need more than a project manager. We bring senior delivery leadership, governance frameworks, and platform modernisation expertise to programs that require both rigour and momentum.',
-    outcomes: [
-      'Program delivered on time with clear governance and reporting',
-      'Stakeholder confidence through structured communication',
-      'Legacy platform modernised with minimal disruption',
-      'Documentation and enablement enabling long-term ownership',
-    ],
-    deliverables: [
-      'Program governance framework',
-      'Executive reporting and dashboards',
-      'Platform modernisation roadmap and delivery',
-      'Knowledge transfer and enablement',
-    ],
-    idealFor: 'Enterprises running complex transformation programs. CIOs managing multi-workstream digital programs. Teams modernising ERP, CRM, or custom platforms.',
-  },
-  {
-    id: 'ai-governance',
-    title: 'AI Governance & Architecture',
-    intro: 'AI adoption is accelerating — and so is the risk of getting it wrong. We help organisations design AI systems responsibly, with architecture that is explainable, governed, and integrated into enterprise workflows.',
-    outcomes: [
-      'AI use cases assessed, prioritised, and governed',
-      'Architecture that supports responsible AI deployment',
-      'Integration patterns connecting AI to existing systems',
-      'Governance frameworks aligned to regulatory expectations',
-    ],
-    deliverables: [
-      'AI opportunity and readiness assessment',
-      'AI solution architecture',
-      'Governance and risk framework for AI',
-      'Integration design for AI-enabled workflows',
-    ],
-    idealFor: 'Enterprise leaders exploring AI at scale. Organisations needing a structured AI governance layer. CTOs designing AI into core platform strategy.',
-  },
-];
-
-export const industries = [
-  {
-    name: 'Telecom',
-    context: 'Telecom organisations face mounting pressure to modernise legacy infrastructure, launch new digital products, and compete with agile challengers — while maintaining the reliability their customers depend on. Transformation requires both technical depth and program delivery discipline.',
-    howWeHelp: 'We support telecom clients with architecture modernisation, new product builds on cloud-native platforms, DevOps capability uplift, and governance of complex multi-vendor programs.',
-    services: ['Platform Modernisation', 'Cloud Architecture', 'Program Delivery', 'Full-Stack Engineering', 'DevOps & Reliability'],
-  },
-  {
-    name: 'Banking & Financial Services',
-    context: 'Financial services organisations need to innovate faster without compromising on compliance, security, or resilience. Whether building new digital products or modernising core systems, the margin for error is low and the expectations from both regulators and customers are high.',
-    howWeHelp: 'We bring security-by-design architecture, regulated environment delivery experience, and product engineering rigour to financial services transformation — from digital product launches to platform overhaul.',
-    services: ['Solution Architecture', 'Security-by-Design', 'Product Builds', 'Governance Frameworks', 'AI Governance & Architecture'],
-  },
-  {
-    name: 'Education',
-    context: 'Education organisations are navigating rapid digitalisation — from student experience platforms to administrative system modernisation and data-driven operations. The challenge is building modern platforms that serve diverse user needs while managing budget constraints and legacy complexity.',
-    howWeHelp: 'We help education institutions design and build modern digital products — from student portals to data platforms — with a focus on usability, integration, and cost-efficient cloud delivery.',
-    services: ['Product Strategy', 'Full-Stack Engineering', 'UX/UI Delivery', 'Cloud & DevOps', 'Platform Modernisation'],
-  },
-  {
-    name: 'Enterprise Transformation',
-    context: 'Large enterprises undergoing digital transformation need more than a strategy — they need delivery. Complex programs spanning multiple business units, vendors, and platforms require senior program leadership, clear governance, and the engineering capability to execute.',
-    howWeHelp: 'We embed with enterprise transformation programs as a senior delivery partner — bringing architecture leadership, engineering capability, and program governance to complex, multi-stakeholder transformations.',
-    services: ['Enterprise Program Delivery', 'Architecture Advisory', 'Embedded Leadership', 'Platform Modernisation', 'AI Governance'],
+    idealFor: 'Funded startups scaling fast. Products with growing user load. Teams needing senior technical leadership without a full-time hire.',
   },
 ];
 
 export const engagementModels = [
   {
-    title: 'Strategic Advisory',
-    whatItIs: 'A structured advisory engagement where we provide senior product, architecture, and delivery guidance — without embedding in day-to-day execution.',
-    whenItFits: 'You have an in-house team but need senior strategic input at key decision points — architecture reviews, product direction, technology selection, or governance design.',
+    title: 'Advisory & Architecture Review',
+    commitment: 'Lightest touch',
+    whatItIs: 'Senior product and engineering guidance at the moments that matter — architecture reviews, tech and stack decisions, hiring, or a second opinion before you commit — without us embedding in delivery.',
+    whenItFits: 'You have a team (or a build underway) but want experienced eyes on the big calls before they get expensive to undo.',
     whatClientsGet: [
-      'Regular senior advisory sessions',
-      'Architecture and product decision support',
-      'Documented recommendations and options analysis',
-      'Access to senior expertise without a full-team commitment',
+      'Senior advisory sessions on your schedule',
+      'Architecture and tech-decision reviews',
+      'A clear, written recommendation',
+      'Senior expertise without a big commitment',
     ],
-    expectedOutcomes: 'Sharper decisions, reduced technical risk, and senior-level confidence in your product and technology direction.',
+    expectedOutcomes: 'Sharper decisions and less risk — the confidence of a senior second opinion before you build.',
   },
   {
-    title: 'Embedded Leadership Support',
-    whatItIs: 'A senior Digital Futurity practitioner embedded into your program or product team — functioning as a fractional CTO, Lead Architect, Delivery Director, or Product Lead.',
-    whenItFits: "You need senior leadership in a specific role but aren't ready to hire full-time — or you need to augment an existing team with a credible, experienced practitioner immediately.",
+    title: 'Productionisation Sprint',
+    commitment: 'Time-boxed',
+    whatItIs: 'A time-boxed engagement to take a fragile MVP to production-grade — security, reliability, performance, and a codebase anyone can extend. We start with an honest assessment: harden, or targeted rebuild.',
+    whenItFits: 'You have something that works, but real users, a raise, or scale are starting to expose the cracks.',
     whatClientsGet: [
-      'Full embedded senior practitioner (part-time or full-time)',
-      'Hands-on leadership of the relevant domain',
-      'Seamless integration with your existing team',
-      'Knowledge transfer to your permanent team',
+      'Codebase and architecture assessment',
+      'A prioritised hardening plan',
+      'The fixes delivered in a fixed window',
+      'A production-ready, documented product',
     ],
-    expectedOutcomes: 'Senior capability delivered quickly, with meaningful transfer of knowledge and practice to your organisation.',
+    expectedOutcomes: "A product that's secure, reliable, and ready for users and investors — in weeks, not months.",
   },
   {
-    title: 'End-to-End Product Build',
-    whatItIs: 'A full product build engagement where Digital Futurity takes end-to-end responsibility — from discovery through architecture, engineering, testing, and launch.',
-    whenItFits: 'You have a product to build but no in-house delivery team, or you want a senior team fully accountable for taking the product from concept to production.',
+    title: 'Fixed-Scope Build',
+    commitment: 'Defined project',
+    whatItIs: 'You know what you need built. We scope it, price it, and deliver it end-to-end — strategy, design, engineering, and launch — with clear milestones and no surprises.',
+    whenItFits: 'You have a defined product or feature to build and want a senior team fully accountable for shipping it.',
     whatClientsGet: [
-      'Complete product delivery team (strategy + arch + engineering + QA)',
-      'Regular sprint delivery with consistent visibility',
-      'Architecture and UX aligned from day one',
-      'Production-ready launch with operational handover',
+      'Clear scope, timeline, and fixed price',
+      'A complete senior delivery team',
+      'Regular demos and full visibility',
+      'A launched, production-ready product',
     ],
-    expectedOutcomes: 'A market-ready digital product delivered with engineering rigour, on a defined timeline and scope.',
+    expectedOutcomes: 'A market-ready product delivered on a defined scope and timeline, built to last.',
   },
   {
-    title: 'Modernisation Partnership',
-    whatItIs: 'A structured engagement to assess, plan, and execute platform modernisation — replacing, re-architecting, or re-platforming legacy systems progressively.',
-    whenItFits: 'You are running a platform that is slowing you down — difficult to change, expensive to maintain, or unable to support your growth requirements.',
+    title: 'Fractional Senior Team',
+    commitment: 'Part-time, ongoing',
+    whatItIs: 'A senior practitioner — or a small pod — embedded into your team part-time, acting as your fractional CTO, lead architect, or engineering lead for as long as you need.',
+    whenItFits: "You need senior leadership and delivery muscle now, but aren't ready — or don't need — to hire full-time.",
     whatClientsGet: [
-      'Current state assessment and modernisation options analysis',
-      'Progressive modernisation roadmap',
-      'Delivery of the modernisation in structured phases',
-      'Risk management and business continuity planning',
+      'Embedded senior practitioner(s)',
+      'Hands-on leadership of the work',
+      'Seamless work with your existing team',
+      'Knowledge transfer to your people',
     ],
-    expectedOutcomes: 'A modernised platform that reduces operational burden, accelerates delivery velocity, and scales with your business.',
+    expectedOutcomes: 'Senior capability from day one, with your team levelled up along the way.',
   },
   {
-    title: 'Architecture & Delivery Acceleration',
-    whatItIs: 'A time-boxed engagement focused on accelerating a specific outcome — architecture design, delivery velocity uplift, cloud migration planning, or DevOps capability build.',
-    whenItFits: 'You need a defined outcome delivered quickly by a senior team, without committing to a long engagement.',
+    title: 'Ongoing Product Partner',
+    commitment: 'Full partnership',
+    whatItIs: 'A continuous partnership where we act as your product and engineering team — shipping features, running growth work, and keeping the platform healthy, sprint after sprint.',
+    whenItFits: 'You have a live product and want a senior team that keeps building and improving it — without the overhead of hiring and managing one.',
     whatClientsGet: [
-      'Clear scope, timeline, and delivery commitment',
-      'Senior practitioner delivery',
-      'Documented outputs ready for ongoing use',
-      'Option to extend if further support is needed',
+      'A dedicated senior team on a rolling basis',
+      'Consistent sprint delivery',
+      'Growth, features, and reliability handled',
+      'One accountable partner for the whole product',
     ],
-    expectedOutcomes: 'A specific, high-value output delivered with speed and seniority — in weeks, not months.',
+    expectedOutcomes: 'Momentum that compounds — a product that keeps getting better without you building a full team.',
+  },
+];
+
+// Real products designed, built, and shipped by the team.
+// NOTE: EduCore and Security Sentry descriptions are provisional — refine with the founder's own one-liners.
+export const products = [
+  {
+    name: 'Upllyft',
+    tagline: 'A multi-app platform for the neurodivergent community — connecting parents, therapists, educators, and organisations.',
+    tags: ['Multi-app platform', 'NestJS', 'Microservices'],
+  },
+  {
+    name: 'IntentOS',
+    tagline: 'A language-first computing layer — describe what you want and it happens, without hunting for and installing apps.',
+    tags: ['AI', 'Product 0→1'],
+  },
+  {
+    name: 'Attestra',
+    tagline: 'A continuous security validation platform — a multi-tenant control plane orchestrating agentic security testing, with row-level tenant isolation and human-in-the-loop workflows.',
+    tags: ['Security', 'Multi-tenant SaaS'],
+  },
+  {
+    name: 'ClearPoint',
+    tagline: 'A diagnostic-to-action engine for AI-readiness consulting — structured assessments that produce traceable diagnoses, roadmaps, and business cases.',
+    tags: ['B2B SaaS', 'AI'],
+  },
+  {
+    name: 'EduCore',
+    tagline: 'A cloud-native learning management platform (LMS), built on Google Cloud with Firebase and Firestore.',
+    tags: ['LMS', 'GCP', 'Firebase'],
+  },
+  {
+    name: 'Security Sentry',
+    tagline: 'An agent-based security monitoring platform with a Python backend and web dashboard, packaged for production deployment.',
+    tags: ['Security', 'Monitoring'],
   },
 ];
 
 export const proofPoints = [
   {
-    title: 'From Idea to Market — 0-1 Product Launch',
-    challenge: 'A founder-led venture needed to move from an early-stage concept to a production-ready digital product within a constrained timeline, without a technical co-founder or in-house engineering team.',
-    approach: 'Digital Futurity led the full engagement — product discovery, roadmap definition, solution architecture, and full-stack engineering — delivering an MVP with clear extensibility for future phases.',
-    outcome: 'A market-ready product launched within the target timeline, with a clean architecture and documented codebase ready for an in-house team to take over.',
+    title: 'Idea to Launched Product',
+    challenge: 'A non-technical founder had validated demand but no way to build — no technical co-founder, no engineering team, and a tight window before a funding conversation.',
+    approach: 'We led the full build — shaping the product, designing the architecture, and shipping a real MVP with room to grow — with the founder in the loop every sprint.',
+    outcome: 'A launched product within the target window, on a clean, documented codebase ready to hand to an in-house team later.',
   },
   {
-    title: 'Full-Stack Platform Development at Enterprise Scale',
-    challenge: 'An enterprise organisation needed a custom platform built to support complex operational workflows across multiple business units, integrated with existing enterprise systems.',
-    approach: 'End-to-end platform development — from solution architecture through full-stack engineering, integration design, and test automation — with regular sprint delivery and stakeholder reporting.',
-    outcome: 'A production-grade platform deployed across business units, with integrations live and a test-automated codebase enabling ongoing feature delivery at pace.',
+    title: 'A Shaky MVP, Made Real',
+    challenge: "A founder's AI-assisted MVP was winning demos but breaking with real users — no proper auth, data exposed, and code no one could safely change.",
+    approach: 'We assessed it honestly, hardened what was worth keeping, and rebuilt the rest — adding security, tests, observability, and a CI/CD pipeline.',
+    outcome: 'A production-grade product the founder could put in front of users and investors without holding their breath.',
   },
   {
-    title: 'Scalable Architecture for a Growing Platform',
-    challenge: 'A scaling business had accumulated significant technical debt and was approaching the limits of their current architecture — slowing delivery velocity and creating reliability risk.',
-    approach: 'A current-state architecture review followed by a progressive re-architecture plan — introducing cloud-native patterns, API abstraction layers, and observability without disrupting ongoing business operations.',
-    outcome: 'Platform delivery velocity improved, infrastructure costs reduced, and a scalable architectural foundation established for the next phase of product growth.',
+    title: 'Outgrowing the First Build',
+    challenge: 'A growing startup had hit the ceiling of its original build — every new feature shipped slower, and something broke on each release.',
+    approach: 'A pragmatic re-architecture — cloud-native patterns, cleaner boundaries, and observability — delivered in stages without stopping the roadmap.',
+    outcome: 'Faster delivery, fewer incidents, and infrastructure costs down — a foundation ready for the next stage of growth.',
   },
   {
-    title: 'Agile Delivery in a Startup Environment',
-    challenge: 'A high-growth startup needed to accelerate delivery velocity without sacrificing engineering quality, as their early codebase struggled to support the pace of product iteration required.',
-    approach: 'Embedded senior engineering and delivery leadership — introducing disciplined agile practices, CI/CD automation, and test coverage — while continuing to deliver features at startup speed.',
-    outcome: 'Delivery cadence significantly improved, production incidents reduced, and the engineering team uplifted in both capability and practice.',
+    title: 'Startup Speed, Without the Mess',
+    challenge: 'A high-growth startup needed to ship faster, but its early codebase and lack of process meant constant regressions and firefighting.',
+    approach: 'We embedded senior engineering leadership — introducing disciplined delivery, CI/CD, and test coverage — while keeping features shipping.',
+    outcome: 'A faster, calmer delivery rhythm, fewer production incidents, and an in-house team levelled up in the process.',
   },
   {
-    title: 'Enterprise Program Governance & Modernisation',
-    challenge: 'A large enterprise running a multi-workstream digital transformation program lacked senior delivery governance — leading to misaligned priorities, inconsistent reporting, and stakeholder confidence issues.',
-    approach: 'Digital Futurity embedded as senior delivery and governance leadership — establishing program governance frameworks, executive reporting, and cross-workstream coordination structures.',
-    outcome: 'Program clarity restored, stakeholder confidence rebuilt, and the transformation accelerated with consistent delivery rhythm and measurable progress tracking.',
+    title: 'Senior Muscle, Without a Full Hire',
+    challenge: 'A funded startup needed senior architecture and delivery leadership but was months away from hiring a full-time CTO.',
+    approach: 'We stepped in as a fractional senior team — setting technical direction, unblocking delivery, and mentoring the existing engineers.',
+    outcome: 'Momentum restored and the right technical calls made early — with knowledge transferred to the permanent team.',
   },
 ];
 
 export const credibilityStats = [
-  '15-18+ Years Experience',
-  'End-to-End Delivery',
-  'Middle East & Asia',
-  'Product + Arch + Engineering',
+  '15+ Years Experience Each',
+  '50+ Startups Mentored via Misk Launchpad',
+  'Idea → Production → Scale',
+  'AWS · GCP · Azure',
 ];

@@ -10,10 +10,11 @@ interface ButtonProps {
   className?: string;
   type?: 'button' | 'submit';
   onClick?: () => void;
+  disabled?: boolean;
 }
 
-export default function Button({ children, variant = 'primary', href, className, type = 'button', onClick }: ButtonProps) {
-  const base = 'inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-medium text-sm transition-all duration-300 cursor-pointer';
+export default function Button({ children, variant = 'primary', href, className, type = 'button', onClick, disabled }: ButtonProps) {
+  const base = 'inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-medium text-sm transition-all duration-300 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed';
   const variants = {
     primary: 'bg-cyan text-black hover:shadow-[0_0_30px_#00d4ff40] active:scale-[0.98]',
     ghost: 'border border-cyan/30 text-cyan hover:bg-cyan/10 active:scale-[0.98]',
@@ -38,9 +39,10 @@ export default function Button({ children, variant = 'primary', href, className,
     <motion.button
       type={type}
       className={classes}
-      whileHover={{ scale: 1.03 }}
-      whileTap={{ scale: 0.98 }}
+      whileHover={disabled ? undefined : { scale: 1.03 }}
+      whileTap={disabled ? undefined : { scale: 0.98 }}
       onClick={onClick}
+      disabled={disabled}
     >
       {children}
     </motion.button>

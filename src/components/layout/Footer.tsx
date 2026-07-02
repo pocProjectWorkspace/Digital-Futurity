@@ -1,11 +1,10 @@
 import { navLinks } from '@/lib/constants';
 
 const capabilityLinks = [
-  'Strategy',
-  'Architecture',
-  'Build',
-  'Operate',
-  'Scale & Govern',
+  'Launch',
+  'Productionise',
+  'Grow',
+  'Scale & Secure',
 ];
 
 export default function Footer() {
@@ -45,13 +44,13 @@ export default function Footer() {
 
           <div>
             <h4 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
-              Capabilities
+              Services
             </h4>
             <ul className="space-y-3">
               {capabilityLinks.map((cap) => (
                 <li key={cap}>
                   <a
-                    href="/capabilities"
+                    href="/services"
                     className="text-silver text-sm hover:text-cyan transition-colors duration-200"
                   >
                     {cap}
@@ -86,10 +85,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-border">
-          <p className="text-silver/60 text-sm text-center">
+        <div className="mt-16 pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-silver/60 text-sm">
             &copy; 2026 Digital Futurity. All rights reserved.
           </p>
+          <a href="/privacy" className="text-silver/60 text-sm hover:text-cyan transition-colors">
+            Privacy Policy
+          </a>
         </div>
       </div>
     </footer>

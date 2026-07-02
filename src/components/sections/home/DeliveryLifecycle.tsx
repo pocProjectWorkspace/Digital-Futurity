@@ -14,7 +14,11 @@ export default function DeliveryLifecycle() {
     <section className="py-24 md:py-32 bg-surface">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedReveal>
-          <SectionHeader heading="End-to-End Across the Delivery Lifecycle" />
+          <SectionHeader
+            eyebrow="How It Works"
+            heading="From Idea to Scale, in Four Stages"
+            subheading="Wherever you are on the path, we pick it up from there. Start at any stage — most founders move through several with us."
+          />
         </AnimatedReveal>
 
         {/* Desktop pipeline */}
@@ -79,6 +83,16 @@ export default function DeliveryLifecycle() {
               </AnimatePresence>
             </AnimatedReveal>
           ))}
+        </div>
+
+        <div className="text-center mt-14">
+          <a
+            href="/services"
+            className="inline-flex items-center gap-2 text-sm text-cyan hover:gap-3 transition-all"
+          >
+            See how each stage works
+            <ArrowRight className="w-4 h-4" />
+          </a>
         </div>
       </div>
     </section>

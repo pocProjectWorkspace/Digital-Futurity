@@ -1,20 +1,20 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Shield, Target, Zap, Cloud } from 'lucide-react';
+import { Award, Compass, MessageSquare, ShieldCheck } from 'lucide-react';
 import SectionHeader from '@/components/ui/SectionHeader';
 import Card from '@/components/ui/Card';
 import AnimatedReveal from '@/components/ui/AnimatedReveal';
 import { whyUsCards } from '@/lib/constants';
 
-const icons = [Shield, Target, Zap, Cloud];
+const icons = [Award, Compass, MessageSquare, ShieldCheck];
 
 export default function WhyUs() {
   return (
     <section className="py-24 md:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedReveal>
-          <SectionHeader heading="Why Clients Choose Digital Futurity" />
+          <SectionHeader heading="Why Founders Choose Us" />
         </AnimatedReveal>
 
         <motion.div
