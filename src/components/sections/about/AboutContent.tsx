@@ -11,16 +11,16 @@ import Button from '@/components/ui/Button';
 const values = [
   { icon: Eye, title: 'Clarity Before Complexity', desc: 'We design solutions that reduce ambiguity, not add to it.' },
   { icon: Layers, title: 'Architecture That Scales', desc: 'Foundations built for growth from the first line of code.' },
-  { icon: Target, title: 'Delivery With Accountability', desc: 'We take full ownership — outcomes, not activity.' },
+  { icon: Target, title: 'Delivery With Accountability', desc: 'We take full ownership. Outcomes, not activity.' },
   { icon: BarChart3, title: 'Business Outcomes Over Activity', desc: 'Everything we build maps to a measurable business objective.' },
-  { icon: Cpu, title: 'Modern Engineering by Default', desc: 'Cloud-native, automated, and observable — by design.' },
+  { icon: Cpu, title: 'Modern Engineering by Default', desc: 'Cloud-native, automated, and observable, by design.' },
 ];
 
 const stats = [
   { value: '15+', label: 'Years experience, each' },
-  { value: '50+', label: 'Startups mentored — Misk Launchpad' },
+  { value: '50+', label: 'Startups mentored at Misk Launchpad' },
   { value: '6+', label: 'Products designed & shipped' },
-  { value: '3', label: 'Clouds — AWS · GCP · Azure' },
+  { value: '3', label: 'Clouds: AWS · GCP · Azure' },
 ];
 
 export default function AboutContent() {
@@ -34,7 +34,7 @@ export default function AboutContent() {
             <span className="text-cyan">Without the big firm.</span>
           </>
         }
-        subheading="A small, senior team of product and engineering practitioners — principal-level architects, engineers, and delivery leads with 15+ years each — who partner with founders who need more than a cheap build."
+        subheading="A small, senior team of product and engineering practitioners: principal-level architects, engineers, and delivery leads with 15+ years each, partnering with founders who need more than a cheap build."
       />
 
       {/* Lead statement */}
@@ -43,7 +43,7 @@ export default function AboutContent() {
           <AnimatedReveal>
             <p className="text-white text-2xl md:text-3xl font-heading font-medium leading-snug tracking-tight">
               We&apos;ve mentored 50+ startups through Misk Launchpad and shipped real products of
-              our own. We know the founder&apos;s road — because we&apos;ve walked it.
+              our own. We know the founder&apos;s road, because we&apos;ve walked it.
             </p>
           </AnimatedReveal>
         </div>
@@ -61,7 +61,7 @@ export default function AboutContent() {
             </h2>
             <div className="space-y-6 text-silver text-lg leading-relaxed">
               <p>
-                We didn&apos;t start as a consultancy. We started as builders — shipping our own
+                We didn&apos;t start as a consultancy. We started as builders, shipping our own
                 products fast, the way every founder does. Upllyft, IntentOS, ClearPoint and more
                 went from idea to working demo in weeks.
               </p>
@@ -72,13 +72,13 @@ export default function AboutContent() {
                 at all.
               </p>
               <p>
-                We felt that gap ourselves — then watched 50+ founders hit the exact same wall while
+                We felt that gap ourselves, then watched 50+ founders hit the exact same wall while
                 mentoring at Misk Launchpad. Same story every time: getting to an MVP was easy;
                 making it real was where things stalled.
               </p>
               <p className="text-white font-heading text-xl leading-relaxed border-l-4 border-cyan pl-6">
                 That&apos;s why Digital Futurity exists. We do the unglamorous, decisive work of
-                turning something that &ldquo;works&rdquo; into something real — because we&apos;ve
+                turning something that &ldquo;works&rdquo; into something real, because we&apos;ve
                 lived the struggle, and we know exactly how to get you through it.
               </p>
             </div>
@@ -96,8 +96,8 @@ export default function AboutContent() {
               Built for the gap founders fall into.
             </h2>
             <p className="text-silver text-lg leading-relaxed">
-              Getting an MVP built has never been easier. Making it real — secure, scalable,
-              reliable, fundable — is where founders get stuck, usually with a codebase no one senior
+              Getting an MVP built has never been easier. Making it real, and secure, scalable,
+              reliable, and fundable, is where founders get stuck, usually with a codebase no one senior
               ever touched. Big firms can do it, but they&apos;re slow and priced for enterprises.
               Cheap teams are fast but leave you with the same fragile product. Digital Futurity sits
               exactly in that gap: big-firm engineering seniority, at a pace and price a startup can
@@ -118,7 +118,7 @@ export default function AboutContent() {
             </h2>
             <p className="text-silver text-lg leading-relaxed">
               Our practitioners hold senior roles elsewhere, so we keep the team confidential by
-              design — and we treat your work with the same discretion. What matters is verifiable:
+              design, and we treat your work with the same discretion. What matters is verifiable:
               15+ years each, 50+ startups mentored through Misk Launchpad, and products we&apos;ve
               designed and shipped. Names, CVs, and references are shared directly under NDA once
               we&apos;re in conversation.

@@ -1,6 +1,6 @@
 import { ImageResponse } from 'next/og';
 
-export const alt = 'Digital Futurity — from MVP to production-grade';
+export const alt = 'Digital Futurity, from MVP to production-grade';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -36,7 +36,7 @@ export default function OpengraphImage() {
         </div>
 
         <div style={{ fontSize: 30, color: '#94a3b8' }}>
-          From fragile MVP to production-grade — senior engineering, startup speed.
+          From fragile MVP to production-grade. Senior engineering, startup speed.
         </div>
       </div>
     ),

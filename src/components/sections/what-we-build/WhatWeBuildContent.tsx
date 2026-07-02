@@ -35,7 +35,7 @@ export default function WhatWeBuildContent() {
             <SectionHeader
               eyebrow="What We Build"
               heading="Built Around What Founders Actually Need"
-              subheading="You don't need a “telecom solution” — you need users, bookings, leads, and a product that doesn't fall over. Here's the practical stuff we build into your product to move the business forward."
+              subheading="You don't need a “telecom solution”. You need users, bookings, leads, and a product that doesn't fall over. Here's the practical stuff we build into your product to move the business forward."
             />
           </AnimatedReveal>
         </div>
@@ -91,7 +91,7 @@ export default function WhatWeBuildContent() {
               And all of it, built to last.
             </h2>
             <p className="text-silver text-lg leading-relaxed mb-8">
-              Whatever we build, it ships production-grade — secure, tested, and ready to scale. No
+              Whatever we build, it ships production-grade: secure, tested, and ready to scale. No
               throwaway MVPs that break the moment they matter.
             </p>
             <Button href="/contact" variant="primary">Tell Us What You Need</Button>

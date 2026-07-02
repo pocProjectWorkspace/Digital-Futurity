@@ -8,7 +8,7 @@ interface ContactPayload {
   email?: string;
   phone?: string;
   message?: string;
-  // Honeypot — real users never fill this; bots do.
+  // Honeypot: real users never fill this; bots do.
   company_website?: string;
 }
 
@@ -70,9 +70,9 @@ export async function POST(request: Request) {
   const html = `
     <h2>New enquiry via Digital Futurity</h2>
     <p><strong>Name:</strong> ${escapeHtml(name)}</p>
-    <p><strong>Organisation:</strong> ${escapeHtml(organisation) || '—'}</p>
+    <p><strong>Organisation:</strong> ${escapeHtml(organisation) || 'Not provided'}</p>
     <p><strong>Email:</strong> ${escapeHtml(email)}</p>
-    <p><strong>Phone:</strong> ${escapeHtml(phone) || '—'}</p>
+    <p><strong>Phone:</strong> ${escapeHtml(phone) || 'Not provided'}</p>
     <p><strong>Message:</strong></p>
     <p>${escapeHtml(message).replace(/\n/g, '<br/>')}</p>
   `;
@@ -88,7 +88,7 @@ export async function POST(request: Request) {
         from,
         to: [to],
         reply_to: email,
-        subject: `New enquiry — ${name}${organisation ? ` (${organisation})` : ''}`,
+        subject: `New enquiry from ${name}${organisation ? ` (${organisation})` : ''}`,
         html,
       }),
     });

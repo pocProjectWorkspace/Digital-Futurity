@@ -17,7 +17,7 @@ export default function DeliveryLifecycle() {
           <SectionHeader
             eyebrow="How It Works"
             heading="From Idea to Scale, in Four Stages"
-            subheading="Wherever you are on the path, we pick it up from there. Start at any stage — most founders move through several with us."
+            subheading="Wherever you are on the path, we pick it up from there. Start at any stage, and most founders move through several with us."
           />
         </AnimatedReveal>
 

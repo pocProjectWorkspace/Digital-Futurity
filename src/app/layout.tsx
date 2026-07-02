@@ -24,18 +24,56 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'Digital Futurity | From MVP to Production-Grade for Founders',
-  description: 'Senior product & engineering team that takes founders from a fragile MVP to a secure, scalable, production-grade product — big-firm seniority, startup speed and price.',
+  title: 'Digital Futurity | Senior Product & Engineering for Founders',
+  description: 'Senior product and engineering team that takes founders from a fragile MVP to a secure, scalable, production-grade product. Big-firm seniority, at startup speed and price.',
+  keywords: [
+    'MVP to production',
+    'productionise MVP',
+    'product engineering for startups',
+    'startup product development',
+    'fractional CTO',
+    'senior engineering team',
+    'MVP development agency',
+    'scale a startup product',
+    'cloud architecture',
+    'AI features for startups',
+    'Misk Launchpad',
+  ],
   openGraph: {
     title: 'Digital Futurity',
-    description: "You've built something. We make it real — from MVP to production-grade.",
+    description: "You've built something. We make it real, from MVP to production-grade.",
     type: 'website',
+    siteName: 'Digital Futurity',
+    locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Digital Futurity',
-    description: "You've built something. We make it real — from MVP to production-grade.",
+    description: "You've built something. We make it real, from MVP to production-grade.",
   },
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  name: 'Digital Futurity',
+  description:
+    'Senior product and engineering team that takes founders from a fragile MVP to a secure, scalable, production-grade product.',
+  url: siteUrl,
+  email: 'cpsutharsan@gmail.com',
+  telephone: '+971562829428',
+  areaServed: ['Middle East', 'Asia', 'Worldwide'],
+  knowsAbout: [
+    'MVP development',
+    'Productionising MVPs',
+    'Product engineering',
+    'Fractional CTO',
+    'Cloud architecture',
+    'DevOps and reliability',
+    'AI product features',
+    'Startup scaling',
+  ],
+  slogan: 'You built something. We make it real.',
 };
 
 export default function RootLayout({
@@ -46,6 +84,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <Navbar />
         <main>{children}</main>
         <Footer />

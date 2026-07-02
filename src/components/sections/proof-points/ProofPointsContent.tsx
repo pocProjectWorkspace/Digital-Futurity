@@ -63,7 +63,7 @@ export default function ProofPointsContent() {
                 }}
                 className="glass rounded-2xl overflow-hidden flex flex-col hover:border-cyan/20 transition-colors"
               >
-                {/* Monogram banner — swap for a real screenshot later */}
+                {/* Monogram banner; swap for a real screenshot later */}
                 <div
                   className={`h-28 bg-gradient-to-br ${gradients[i % gradients.length]} border-b border-border flex items-center justify-center`}
                 >
@@ -98,7 +98,7 @@ export default function ProofPointsContent() {
               How we help founders
             </h2>
             <p className="text-silver text-lg leading-relaxed mb-12 max-w-2xl">
-              The shape of the engagements we take on — from getting off the ground to productionising
+              The shape of the engagements we take on, from getting off the ground to productionising
               and scaling.
             </p>
           </AnimatedReveal>

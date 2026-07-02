@@ -13,7 +13,7 @@ interface FormData {
   email: string;
   phone: string;
   message: string;
-  company_website: string; // honeypot — hidden from users
+  company_website: string; // honeypot: hidden from users
 }
 
 export default function ContactContent() {
@@ -49,7 +49,7 @@ export default function ContactContent() {
             Let&apos;s build the <span className="text-cyan">real thing.</span>
           </>
         }
-        subheading="Whether you're shaping a new product, productionising a shaky MVP, or need senior delivery muscle — tell us where you are and we'll tell you the fastest way forward."
+        subheading="Whether you're shaping a new product, productionising a shaky MVP, or you need senior delivery muscle, tell us where you are and we'll tell you the fastest way forward."
       />
 
       <section className="pb-24 md:pb-32">
@@ -90,7 +90,7 @@ export default function ContactContent() {
                   <Lock className="w-6 h-6 text-cyan shrink-0 mt-1" strokeWidth={1.5} />
                   <div>
                     <h4 className="text-white font-semibold mb-1">Confidential</h4>
-                    <p className="text-silver">What you share stays between us — always.</p>
+                    <p className="text-silver">What you share stays between us, always.</p>
                   </div>
                 </div>
               </div>
