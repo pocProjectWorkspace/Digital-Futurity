@@ -1,107 +1,100 @@
 'use client';
 
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, CheckCircle } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { Check } from 'lucide-react';
 import { engagementModels, bestFitEngagements } from '@/lib/constants';
-import SectionHeader from '@/components/ui/SectionHeader';
+import PageHero from '@/components/ui/PageHero';
 import AnimatedReveal from '@/components/ui/AnimatedReveal';
 import GlowDivider from '@/components/ui/GlowDivider';
 import Button from '@/components/ui/Button';
 
 export default function EngagementContent() {
-  const [expanded, setExpanded] = useState<number | null>(0);
-
   return (
     <>
-      {/* Hero */}
-      <section className="pt-32 pb-16 md:pt-40 md:pb-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedReveal>
-            <SectionHeader
-              eyebrow="How We Work"
-              heading="Engagement Models"
-              subheading="Flexible models designed to match your needs — whether you need strategic guidance, embedded leadership, or a full delivery team."
-            />
-          </AnimatedReveal>
-        </div>
-      </section>
-
-      <GlowDivider />
+      <PageHero
+        eyebrow="How We Work"
+        title={
+          <>
+            Work with us the way{' '}
+            <span className="text-cyan">that fits.</span>
+          </>
+        }
+        subheading="From a one-off second opinion to a full product team, pick the level of commitment that matches where you are. You can always start small and go deeper."
+      />
 
       {/* Models */}
-      <section className="py-24 md:py-32">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-          {engagementModels.map((model, i) => (
-            <AnimatedReveal key={i} delay={i * 0.05}>
-              <div className="glass rounded-2xl overflow-hidden">
-                <button
-                  onClick={() => setExpanded(expanded === i ? null : i)}
-                  className="w-full p-6 md:p-8 text-left flex items-center justify-between"
-                >
-                  <h3 className="font-heading text-xl md:text-2xl font-bold text-white pr-4">
-                    {model.title}
-                  </h3>
-                  <ChevronDown
-                    className={`w-6 h-6 text-cyan transition-transform shrink-0 ${expanded === i ? 'rotate-180' : ''}`}
-                  />
-                </button>
-
-                <AnimatePresence>
-                  {expanded === i && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: 'auto', opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3 }}
-                      className="overflow-hidden"
-                    >
-                      <div className="px-6 md:px-8 pb-8 space-y-6">
-                        <div>
-                          <h4 className="text-sm uppercase tracking-widest text-cyan mb-2 font-medium">What It Is</h4>
-                          <p className="text-silver leading-relaxed">{model.whatItIs}</p>
-                        </div>
-
-                        <div>
-                          <h4 className="text-sm uppercase tracking-widest text-cyan mb-2 font-medium">When It Fits</h4>
-                          <p className="text-silver leading-relaxed">{model.whenItFits}</p>
-                        </div>
-
-                        <div>
-                          <h4 className="text-sm uppercase tracking-widest text-cyan mb-3 font-medium">What Clients Get</h4>
-                          <ul className="space-y-2">
-                            {model.whatClientsGet.map((item, j) => (
-                              <li key={j} className="flex items-start gap-3 text-silver">
-                                <CheckCircle className="w-5 h-5 text-cyan shrink-0 mt-0.5" strokeWidth={1.5} />
-                                {item}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-
-                        <div>
-                          <h4 className="text-sm uppercase tracking-widest text-cyan mb-2 font-medium">Expected Outcomes</h4>
-                          <p className="text-silver leading-relaxed">{model.expectedOutcomes}</p>
-                        </div>
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {engagementModels.map((model, i) => (
+          <section
+            key={model.title}
+            className="py-14 md:py-20 border-b border-border last:border-b-0"
+          >
+            <div className="grid lg:grid-cols-12 gap-8 lg:gap-12">
+              {/* Number + title + commitment */}
+              <div className="lg:col-span-5">
+                <AnimatedReveal>
+                  <div className="flex items-start gap-5">
+                    <span className="font-heading font-bold text-5xl md:text-6xl text-border-bright leading-none select-none">
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
+                    <div>
+                      <span className="inline-block text-xs uppercase tracking-widest text-cyan bg-cyan/10 border border-cyan/20 rounded-full px-3 py-1 mb-3">
+                        {model.commitment}
+                      </span>
+                      <h2 className="font-heading text-2xl md:text-3xl font-bold tracking-tight text-white">
+                        {model.title}
+                      </h2>
+                    </div>
+                  </div>
+                  <p className="text-silver leading-relaxed mt-6 max-w-md">{model.whatItIs}</p>
+                  <p className="text-silver/70 text-sm leading-relaxed mt-5 max-w-md">
+                    <span className="text-white font-medium">When it fits: </span>
+                    {model.whenItFits}
+                  </p>
+                </AnimatedReveal>
               </div>
-            </AnimatedReveal>
-          ))}
-        </div>
-      </section>
+
+              {/* What you get + outcome */}
+              <div className="lg:col-span-7">
+                <AnimatedReveal delay={0.1}>
+                  <div className="glass rounded-2xl p-6 md:p-8">
+                    <h3 className="text-sm uppercase tracking-widest text-cyan mb-4 font-medium">
+                      What you get
+                    </h3>
+                    <ul className="grid sm:grid-cols-2 gap-3">
+                      {model.whatClientsGet.map((item) => (
+                        <li key={item} className="flex items-start gap-3 text-silver text-sm">
+                          <Check className="w-4 h-4 text-cyan shrink-0 mt-0.5" strokeWidth={2.5} />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="border-t border-border mt-6 pt-6">
+                      <p className="text-white leading-relaxed">
+                        <span className="text-silver/70 text-sm uppercase tracking-widest block mb-2">
+                          The outcome
+                        </span>
+                        {model.expectedOutcomes}
+                      </p>
+                    </div>
+                  </div>
+                </AnimatedReveal>
+              </div>
+            </div>
+          </section>
+        ))}
+      </div>
 
       <GlowDivider />
 
-      {/* Best Fit Engagements */}
+      {/* Best fit */}
       <section className="py-24 md:py-32 bg-surface">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedReveal>
-            <SectionHeader heading="Best Fit Engagements" />
+            <h2 className="font-heading text-3xl md:text-4xl font-bold tracking-tight text-white mb-10">
+              Where founders bring us in
+            </h2>
           </AnimatedReveal>
-
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -109,9 +102,9 @@ export default function EngagementContent() {
             variants={{ visible: { transition: { staggerChildren: 0.08 } } }}
             className="flex flex-wrap justify-center gap-3"
           >
-            {bestFitEngagements.map((engagement, i) => (
+            {bestFitEngagements.map((engagement) => (
               <motion.span
-                key={i}
+                key={engagement}
                 variants={{
                   hidden: { opacity: 0, y: 20 },
                   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -135,7 +128,7 @@ export default function EngagementContent() {
               Not sure which model fits?
             </h2>
             <p className="text-silver text-lg leading-relaxed mb-8">
-              Let&apos;s have a conversation and find the right approach together.
+              Tell us where you are and we&apos;ll suggest the right way to start.
             </p>
             <Button href="/contact" variant="primary">Start the Conversation</Button>
           </AnimatedReveal>
