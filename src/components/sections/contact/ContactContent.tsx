@@ -56,8 +56,8 @@ export default function ContactContent() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-5 gap-12">
             {/* Contact details */}
-            <AnimatedReveal>
-              <div className="lg:col-span-2 space-y-8">
+            <AnimatedReveal className="lg:col-span-2">
+              <div className="space-y-8">
                 <div className="flex items-start gap-4">
                   <Mail className="w-6 h-6 text-cyan shrink-0 mt-1" strokeWidth={1.5} />
                   <div>
@@ -87,8 +87,8 @@ export default function ContactContent() {
             </AnimatedReveal>
 
             {/* Form */}
-            <AnimatedReveal delay={0.1}>
-              <div className="lg:col-span-3">
+            <AnimatedReveal delay={0.1} className="lg:col-span-3">
+              <div>
                 {submitted ? (
                   <div className="glass rounded-2xl p-8 md:p-10 text-center">
                     <h3 className="font-heading text-2xl font-bold text-white mb-4">Thank you.</h3>
