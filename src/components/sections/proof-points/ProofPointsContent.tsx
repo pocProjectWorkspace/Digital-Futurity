@@ -3,7 +3,7 @@
 import { Suspense } from 'react';
 import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
-import { proofPoints, credibilityStats } from '@/lib/constants';
+import { products, proofPoints, credibilityStats } from '@/lib/constants';
 import SectionHeader from '@/components/ui/SectionHeader';
 import Card from '@/components/ui/Card';
 import AnimatedReveal from '@/components/ui/AnimatedReveal';
@@ -23,9 +23,9 @@ export default function ProofPointsContent() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedReveal>
             <SectionHeader
-              eyebrow="What We've Delivered"
-              heading="Proof Points"
-              subheading="Selected delivery outcomes across product launches, platform development, architecture modernisation, and enterprise program delivery."
+              eyebrow="Proof, Not Promises"
+              heading="Products We've Designed, Built & Shipped"
+              subheading="We don't just advise — we ship. Here's real product work from our team, alongside the kinds of engagements we take on. Client names and references are shared under NDA."
             />
           </AnimatedReveal>
         </div>
@@ -33,9 +33,45 @@ export default function ProofPointsContent() {
 
       <GlowDivider />
 
-      {/* Proof Points */}
+      {/* Products we've built */}
       <section className="py-24 md:py-32">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedReveal>
+            <SectionHeader heading="Products From Our Workbench" align="left" />
+          </AnimatedReveal>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {products.map((p, i) => (
+              <AnimatedReveal key={p.name} delay={(i % 3) * 0.1}>
+                <Card className="h-full flex flex-col">
+                  <h3 className="font-heading text-xl font-bold text-white mb-3">{p.name}</h3>
+                  <p className="text-silver text-sm leading-relaxed flex-1">{p.tagline}</p>
+                  <div className="flex flex-wrap gap-2 mt-5">
+                    {p.tags.map((tag) => (
+                      <span key={tag} className="text-xs text-cyan bg-cyan/10 px-3 py-1 rounded-full">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </Card>
+              </AnimatedReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <GlowDivider />
+
+      {/* Engagement narratives */}
+      <section className="py-24 md:py-32">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedReveal>
+            <SectionHeader
+              heading="How We Help Founders"
+              subheading="The shape of the engagements we take on — from getting off the ground to productionising and scaling."
+              align="left"
+            />
+          </AnimatedReveal>
+          <div className="space-y-8">
           {proofPoints.map((pp, i) => (
             <AnimatedReveal key={i}>
               <Card hover={false} className="p-8 md:p-10">
@@ -60,6 +96,7 @@ export default function ProofPointsContent() {
               </Card>
             </AnimatedReveal>
           ))}
+          </div>
         </div>
       </section>
 

@@ -38,7 +38,7 @@ export default function AboutContent() {
           <AnimatedReveal>
             <SectionHeader
               eyebrow="Who We Are"
-              heading="Technology Leadership with Delivery Depth"
+              heading="Big-Firm Seniority, Without the Big Firm"
               align="left"
             />
           </AnimatedReveal>
@@ -50,11 +50,12 @@ export default function AboutContent() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedReveal>
             <p className="text-silver text-lg leading-relaxed">
-              Digital Futurity is a senior digital product and engineering team with 15-18+ years
-              of experience each across product innovation, enterprise architecture, and cloud
-              delivery. We operate across the Middle East and Asia, partnering with enterprises,
-              founders, and transformation leaders who need more than execution — they need
-              seniority, judgement, and accountability at every level of the engagement.
+              Digital Futurity is a small, senior team of product and engineering practitioners —
+              principal-level architects, engineers, and delivery leads with 15+ years each. We&apos;ve
+              mentored 50+ startups through Misk Launchpad and shipped real products of our own. We
+              partner with founders and small teams who need more than a cheap build — they need the
+              seniority to take a product from fragile MVP to production-grade, and the judgement to
+              know which battles to fight first.
             </p>
           </AnimatedReveal>
         </div>
@@ -62,16 +63,70 @@ export default function AboutContent() {
 
       <GlowDivider />
 
-      {/* Why We Exist */}
+      {/* Our Story */}
       <section className="py-24 md:py-32 bg-surface">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedReveal>
-            <SectionHeader heading="Built for Complex Transformation" align="left" />
+            <SectionHeader eyebrow="Our Story" heading="We've Been in Your Seat" align="left" />
+            <div className="space-y-6 text-silver text-lg leading-relaxed">
+              <p>
+                We didn&apos;t start as a consultancy. We started as builders — shipping our own
+                products fast, the way every founder does. Upllyft, IntentOS, ClearPoint and more
+                went from idea to working demo in weeks.
+              </p>
+              <p>
+                Then came the part no one warns you about. The demo that impressed everyone
+                couldn&apos;t take real users. Auth was an afterthought. The database buckled. The
+                cloud bill climbed. What we&apos;d built to move fast now stood in the way of moving
+                at all.
+              </p>
+              <p>
+                We felt that gap ourselves — then watched 50+ founders hit the exact same wall while
+                mentoring at Misk Launchpad. Same story every time: getting to an MVP was easy;
+                making it real was where things stalled.
+              </p>
+              <p className="text-white font-heading text-xl leading-relaxed border-l-4 border-cyan pl-6">
+                That&apos;s why Digital Futurity exists. We do the unglamorous, decisive work of
+                turning something that &ldquo;works&rdquo; into something real — because we&apos;ve
+                lived the struggle, and we know exactly how to get you through it.
+              </p>
+            </div>
+          </AnimatedReveal>
+        </div>
+      </section>
+
+      <GlowDivider />
+
+      {/* Why We Exist */}
+      <section className="py-24 md:py-32">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedReveal>
+            <SectionHeader heading="Built for the Gap Founders Fall Into" align="left" />
             <p className="text-silver text-lg leading-relaxed">
-              We exist because complex organisations often choose between strategic advisors who
-              can&apos;t build, or engineering teams that can&apos;t think strategically. Digital
-              Futurity bridges that gap — combining product vision, architectural rigour, and
-              hands-on delivery capability in a single senior team.
+              Getting an MVP built has never been easier. Making it real — secure, scalable, reliable,
+              fundable — is where founders get stuck, usually with a codebase no one senior ever
+              touched. Big firms can do it, but they&apos;re slow and priced for enterprises. Cheap
+              teams are fast but leave you with the same fragile product. Digital Futurity sits exactly
+              in that gap: big-firm engineering seniority, at a pace and price a startup can actually
+              work with.
+            </p>
+          </AnimatedReveal>
+        </div>
+      </section>
+
+      <GlowDivider />
+
+      {/* Confidential by design */}
+      <section className="py-24 md:py-32 bg-surface">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedReveal>
+            <SectionHeader heading="Why You Won't See Our Names Here" align="left" />
+            <p className="text-silver text-lg leading-relaxed">
+              Our practitioners hold senior roles elsewhere, so we keep the team confidential by
+              design — and we treat your work with the same discretion. What matters is verifiable:
+              15+ years each, 50+ startups mentored through Misk Launchpad, and products we&apos;ve
+              designed and shipped. Names, CVs, and references are shared directly under NDA once
+              we&apos;re in conversation.
             </p>
           </AnimatedReveal>
         </div>

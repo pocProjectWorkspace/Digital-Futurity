@@ -20,8 +20,8 @@ export default function CapabilitiesContent() {
           <AnimatedReveal>
             <SectionHeader
               eyebrow="What We Do"
-              heading="End-to-End Digital Product & Engineering Capabilities"
-              subheading="From product strategy and architecture to cloud delivery, DevOps, and AI governance — we bring senior capability across the full lifecycle."
+              heading="Everything to Get From Idea to Production — and Scale"
+              subheading="Whether you're starting from scratch or productionising something that already “works”, we cover the full journey: strategy, build, architecture, cloud, and reliability — on AWS, GCP, or Azure."
             />
           </AnimatedReveal>
         </div>
@@ -104,10 +104,11 @@ export default function CapabilitiesContent() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedReveal>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-6">
-              Need a capability conversation?
+              Not sure where you&apos;re stuck?
             </h2>
             <p className="text-silver text-lg leading-relaxed mb-8">
-              Let&apos;s discuss how our capabilities align with your needs.
+              Tell us what you&apos;ve got — an idea, a shaky MVP, or a product straining under growth —
+              and we&apos;ll tell you exactly what it needs.
             </p>
             <Button href="/contact" variant="primary">Book a Consultation</Button>
           </AnimatedReveal>

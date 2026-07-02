@@ -47,9 +47,9 @@ export const navLinks = [
 ];
 
 export const trustStats = [
-  { value: 18, suffix: '+', label: 'Years Experience Each' },
-  { value: 50, suffix: '+', label: 'Startups Mentored' },
-  { value: 2, suffix: '', label: 'Regions: Middle East & Asia' },
+  { value: 15, suffix: '+', label: 'Years Experience Each' },
+  { value: 50, suffix: '+', label: 'Startups Mentored — Misk Launchpad' },
+  { value: 6, suffix: '+', label: 'Products Designed & Shipped' },
 ];
 
 export const whyUsCards = [
@@ -319,6 +319,41 @@ export const engagementModels = [
   },
 ];
 
+// Real products designed, built, and shipped by the team.
+// NOTE: EduCore and Security Sentry descriptions are provisional — refine with the founder's own one-liners.
+export const products = [
+  {
+    name: 'Upllyft',
+    tagline: 'A multi-app platform for the neurodivergent community — connecting parents, therapists, educators, and organisations.',
+    tags: ['Multi-app platform', 'NestJS', 'Microservices'],
+  },
+  {
+    name: 'IntentOS',
+    tagline: 'A language-first computing layer — describe what you want and it happens, without hunting for and installing apps.',
+    tags: ['AI', 'Product 0→1'],
+  },
+  {
+    name: 'Attestra',
+    tagline: 'A continuous security validation platform — a multi-tenant control plane orchestrating agentic security testing, with row-level tenant isolation and human-in-the-loop workflows.',
+    tags: ['Security', 'Multi-tenant SaaS'],
+  },
+  {
+    name: 'ClearPoint',
+    tagline: 'A diagnostic-to-action engine for AI-readiness consulting — structured assessments that produce traceable diagnoses, roadmaps, and business cases.',
+    tags: ['B2B SaaS', 'AI'],
+  },
+  {
+    name: 'EduCore',
+    tagline: 'A cloud-native learning management platform (LMS), built on Google Cloud with Firebase and Firestore.',
+    tags: ['LMS', 'GCP', 'Firebase'],
+  },
+  {
+    name: 'Security Sentry',
+    tagline: 'An agent-based security monitoring platform with a Python backend and web dashboard, packaged for production deployment.',
+    tags: ['Security', 'Monitoring'],
+  },
+];
+
 export const proofPoints = [
   {
     title: 'From Idea to Market — 0-1 Product Launch',
@@ -353,8 +388,8 @@ export const proofPoints = [
 ];
 
 export const credibilityStats = [
-  '15-18+ Years Experience',
-  'End-to-End Delivery',
-  'Middle East & Asia',
-  'Product + Arch + Engineering',
+  '15+ Years Experience Each',
+  '50+ Startups Mentored via Misk Launchpad',
+  'Idea → Production → Scale',
+  'AWS · GCP · Azure',
 ];

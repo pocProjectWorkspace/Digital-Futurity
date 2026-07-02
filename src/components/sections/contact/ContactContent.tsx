@@ -16,15 +16,31 @@ interface FormData {
   email: string;
   phone: string;
   message: string;
+  company_website: string; // honeypot — hidden from users
 }
 
 export default function ContactContent() {
   const [submitted, setSubmitted] = useState(false);
-  const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
+  const [submitError, setSubmitError] = useState<string | null>(null);
+  const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm<FormData>();
 
-  const onSubmit = (data: FormData) => {
-    console.log('Form submitted:', data);
-    setSubmitted(true);
+  const onSubmit = async (data: FormData) => {
+    setSubmitError(null);
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) {
+        const body = await res.json().catch(() => null);
+        setSubmitError(body?.error ?? 'Something went wrong. Please try again.');
+        return;
+      }
+      setSubmitted(true);
+    } catch {
+      setSubmitError('Network error. Please try again or email us directly.');
+    }
   };
 
   return (
@@ -90,6 +106,15 @@ export default function ContactContent() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit(onSubmit)} className="glass rounded-2xl p-8 md:p-10 space-y-6">
+                  {/* Honeypot: hidden from humans, catches bots */}
+                  <input
+                    type="text"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    aria-hidden="true"
+                    {...register('company_website')}
+                    className="hidden"
+                  />
                   <div>
                     <label htmlFor="name" className="block text-sm text-white mb-2">Name *</label>
                     <input
@@ -148,8 +173,12 @@ export default function ContactContent() {
                     {errors.message && <p className="text-red-400 text-sm mt-1">{errors.message.message}</p>}
                   </div>
 
-                  <Button type="submit" variant="primary" className="w-full">
-                    Send Message
+                  {submitError && (
+                    <p className="text-red-400 text-sm" role="alert">{submitError}</p>
+                  )}
+
+                  <Button type="submit" variant="primary" className="w-full" disabled={isSubmitting}>
+                    {isSubmitting ? 'Sending…' : 'Send Message'}
                   </Button>
                 </form>
               )}

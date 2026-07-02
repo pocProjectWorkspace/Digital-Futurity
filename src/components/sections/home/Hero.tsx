@@ -22,7 +22,7 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
             className="text-sm uppercase tracking-widest text-cyan mb-6 font-medium"
           >
-            Senior Digital Product & Engineering Consultancy
+            Senior Product Engineering — Built for Founders
           </motion.p>
 
           <motion.h1
@@ -31,9 +31,9 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-heading text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-white mb-6 leading-[1.1]"
           >
-            Design, Build, and Scale
+            You&apos;ve Built Something.
             <br />
-            <span className="text-glow">Digital Products</span> for What&apos;s Next
+            <span className="text-glow">We Make It Real.</span>
           </motion.h1>
 
           <motion.p
@@ -42,9 +42,9 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-silver text-lg leading-relaxed mb-8 max-w-xl"
           >
-            Digital Futurity helps organisations turn ambitious ideas into scalable digital
-            platforms — through strategy, architecture, engineering, cloud delivery, and
-            operational excellence.
+            Digital Futurity takes founders from a fragile MVP to a secure, scalable,
+            production-grade product — and builds it with you from scratch when you&apos;re
+            starting there. Big-firm engineering seniority, at startup speed and price.
           </motion.p>
 
           <motion.div
@@ -54,7 +54,7 @@ export default function Hero() {
             className="flex flex-wrap gap-4"
           >
             <Button href="/contact" variant="primary">Book a Consultation</Button>
-            <Button href="/capabilities" variant="ghost">Explore Capabilities</Button>
+            <Button href="/proof-points" variant="ghost">See What We&apos;ve Built</Button>
           </motion.div>
         </div>
       </div>
