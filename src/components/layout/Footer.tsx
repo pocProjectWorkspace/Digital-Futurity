@@ -86,10 +86,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-border">
-          <p className="text-silver/60 text-sm text-center">
+        <div className="mt-16 pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-silver/60 text-sm">
             &copy; 2026 Digital Futurity. All rights reserved.
           </p>
+          <a href="/privacy" className="text-silver/60 text-sm hover:text-cyan transition-colors">
+            Privacy Policy
+          </a>
         </div>
       </div>
     </footer>
