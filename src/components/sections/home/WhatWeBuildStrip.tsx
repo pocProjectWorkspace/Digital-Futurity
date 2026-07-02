@@ -32,7 +32,7 @@ export default function WhatWeBuildStrip() {
           <SectionHeader
             eyebrow="What We Build"
             heading="The Systems Founders Actually Ask For"
-            subheading="Not industries — outcomes. The practical things that move your business forward."
+            subheading="Not industries. Outcomes. The practical things that move your business forward."
           />
         </AnimatedReveal>
 

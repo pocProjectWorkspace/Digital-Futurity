@@ -18,7 +18,7 @@ export default function ServicesContent() {
             <span className="text-cyan">whole journey.</span>
           </>
         }
-        subheading="From an idea to a product that scales — four stages, wherever you are on the path. Start at any one; most founders move through several with us."
+        subheading="From an idea to a product that scales, in four stages, wherever you are on the path. Start at any one, and most founders move through several with us."
       />
 
       {/* Journey nav */}
@@ -129,8 +129,8 @@ export default function ServicesContent() {
               Not sure which stage you&apos;re at?
             </h2>
             <p className="text-silver text-lg leading-relaxed mb-8">
-              Tell us what you&apos;ve got — an idea, a shaky MVP, or a product straining under growth
-              — and we&apos;ll tell you exactly what it needs next.
+              Tell us what you&apos;ve got, whether an idea, a shaky MVP, or a product straining under
+              growth, and we&apos;ll tell you exactly what it needs next.
             </p>
             <Button href="/contact" variant="primary">Book a Consultation</Button>
           </AnimatedReveal>

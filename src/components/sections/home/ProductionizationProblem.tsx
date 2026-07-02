@@ -6,7 +6,7 @@ import SectionHeader from '@/components/ui/SectionHeader';
 import AnimatedReveal from '@/components/ui/AnimatedReveal';
 
 const symptoms = [
-  'Held together with tape — one dependency from breaking',
+  'Held together with tape, one dependency from breaking',
   'Insecure: no real auth, secrets in the code, open data',
   'Falls over the moment real users show up',
   'No one but the original builder can extend it',
@@ -19,7 +19,7 @@ const production = [
   'Security and data protection done properly',
   'Tested, observable, and reliable under load',
   'A clean codebase any engineer can pick up',
-  'Cloud set up to scale — and cost what it should',
+  'Cloud set up to scale, and cost what it should',
   'Ready for users, investors, and due diligence',
 ];
 
@@ -31,7 +31,7 @@ export default function ProductionizationProblem() {
           <SectionHeader
             eyebrow="The Real Problem"
             heading="Building an MVP is easy now. Making it real is where founders get stuck."
-            subheading="Anyone can ship a demo — no-code, AI, a cheap dev. But the day you have real users, a raise, or investors looking closely, the cracks show. Closing the gap between “it works on my screen” and “it’s a real product” is exactly what we do."
+            subheading="Anyone can ship a demo now, with no-code, AI, or a cheap dev. But the day you have real users, a raise, or investors looking closely, the cracks show. Closing the gap between “it works on my screen” and “it’s a real product” is exactly what we do."
           />
         </AnimatedReveal>
 
@@ -72,7 +72,7 @@ export default function ProductionizationProblem() {
         <AnimatedReveal delay={0.2}>
           <motion.p className="text-center text-white text-lg md:text-xl font-heading mt-14 max-w-3xl mx-auto leading-relaxed">
             And we&apos;ll tell you straight whether to <span className="text-cyan">harden what you have</span> or{' '}
-            <span className="text-cyan">rebuild it right</span> — not just bill you to patch it.
+            <span className="text-cyan">rebuild it right</span>, not just bill you to patch it.
           </motion.p>
         </AnimatedReveal>
       </div>

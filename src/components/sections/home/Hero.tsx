@@ -33,7 +33,7 @@ export default function Hero() {
           >
             <span className="w-1.5 h-1.5 rounded-full bg-cyan" />
             <span className="text-xs uppercase tracking-widest text-silver font-medium">
-              Senior product engineering — built for founders
+              Senior product engineering, built for founders
             </span>
           </motion.div>
 
@@ -58,8 +58,8 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-silver text-lg md:text-xl leading-relaxed mt-8 mb-10 max-w-xl"
           >
-            We take founders from a fragile MVP to a secure, scalable, production-grade product —
-            and build it with you from scratch when you&apos;re starting there. Big-firm seniority,
+            We take founders from a fragile MVP to a secure, scalable, production-grade product,
+            and we build it with you from scratch when you&apos;re starting there. Big-firm seniority,
             at startup speed and price.
           </motion.p>
 

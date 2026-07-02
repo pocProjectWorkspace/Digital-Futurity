@@ -19,7 +19,7 @@ export default function HomeCTA() {
           </h2>
           <p className="text-silver text-lg md:text-xl leading-relaxed mb-10 max-w-2xl mx-auto">
             Whether you&apos;re launching, productionising a shaky MVP, or scaling what&apos;s already
-            working — tell us where you are and we&apos;ll tell you the fastest way forward.
+            working, tell us where you are and we&apos;ll tell you the fastest way forward.
           </p>
           <Button href="/contact" variant="primary">Book a Consultation</Button>
         </AnimatedReveal>
